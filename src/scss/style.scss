@@ -1,0 +1,25 @@
+@import "fonts";
+@import "_vars";
+@import "_global";
+@import "_reset";
+@import "_header";
+@import "ui";
+@import "footer";
+@import "hero";
+//@import "icons";
+
+
+//=================<MAIN BLOCK>==============================
+
+.page{
+	padding: 0 0 0 0 ;
+	flex: 1 1 auto;
+	@media (max-width: $md3){
+		padding: 30px 0px 0px 0px;
+	 }
+}
+
+.swiper {
+	width: 900px;
+	height: 300px;
+  }

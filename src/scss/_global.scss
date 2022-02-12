@@ -1,0 +1,43 @@
+
+body {
+    color: #21243D;
+    font-family: $fontFamily;
+	font-size: $fontSize + px;
+    &.locked {
+        overflow: hidden;
+    }
+}
+.wrapper{
+    width: 100%;
+    min-height: 100%;
+    overflow: hidden;
+    display: flex;
+    flex-direction: column;
+    &.loaded{
+        
+    }
+}
+
+.container{
+    max-width: $maxWidthContainer + px;
+    margin: 0 auto;
+    @media (max-width: $md1){
+        max-width: 970px;
+    }
+    @media (max-width: $md2){
+        max-width: 750px;
+    }
+    @media (max-width: $md3){
+        max-width: none;
+        padding: 0 10px;
+    }
+}
+
+@keyframes fade {
+    0%{
+        opacity: 0;
+    }
+    100% {
+        opacity: 1;
+    }
+}

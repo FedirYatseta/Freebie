@@ -1,0 +1,29 @@
+@use 'sass:math';
+$containerWidth: 998;
+$containerPadding: 40;
+$containerSidePadding: math.div($containerPadding, 2);
+
+$minWidth: 320px;
+$maxWidth: 1152;
+$maxWidthContainer: 1185;
+$md1: $maxWidthContainer + 12;
+$md2: 991.98 + px;;
+$md3: 767.98 + px;;
+$md4: 479.98 + px;;
+
+//Burger Menu
+$burgerBreakpoint: $md3;
+$burgerActiveColor: #000;
+$burgerFrontColor: rgba(248, 248, 248, 0.945);
+
+//Colors
+$mainColor: #fff;
+//fonts
+$fontFamily: "Oswald";
+$fontSize: 14;
+
+// var
+
+
+
+

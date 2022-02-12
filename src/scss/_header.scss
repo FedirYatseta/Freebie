@@ -1,0 +1,150 @@
+
+.header {
+    background: url("../img/Bitmap.svg") center no-repeat;
+    height: 100vh;
+    width: 100vw;
+    color: #fff;
+    &__content {
+        max-width: 1182px;
+    }
+}
+
+nav {
+    overflow: hidden;
+}
+.navbar {
+    display: flex;
+    width: 100%;
+    justify-content: space-between;
+    padding-top: 15px;
+    padding-bottom: 15px;
+}
+.menu {
+    display: flex;
+
+    &__item {
+        margin: 10px;
+    }
+
+    &__item-link {
+        color: rgb(250, 250, 250);
+        font-style: normal;
+        font-weight: 500;
+        font-size: 20px;
+        line-height: 29px;
+        &._active{
+            color:#FF6464;
+        }
+    }
+
+    &__item-link:hover {
+        color:#FF6464;
+    }
+}
+.burger {
+    display: none;
+    cursor: pointer;
+}
+
+
+//Burger menu style
+@media screen and (max-width: $burgerBreakpoint ) {
+	//.menu
+	.menu {
+		position: fixed;
+		background-color: $burgerFrontColor;
+		left: 0;
+        top: 0;
+        height: 100vh;
+        width: 100vw;
+        display: none;
+
+        &.active{
+            display: flex;
+            left: 0;
+            top: 0;
+            height: 100vh;
+            width: 100vw;
+            flex-direction: column;
+            pointer-events: all;
+            justify-content: center;
+            align-items: center;
+            z-index: 12;
+            animation: fade 0.1s linear;
+        }
+	}
+    
+    .burger {
+        display: flex;
+        position: relative;
+        height: 20px;
+        width: 30px;
+        z-index: 102;
+        margin: 20px;
+        cursor: pointer;
+
+        &.active-burger{
+            &:before{
+                background: $burgerActiveColor;
+                transform: rotate(45deg);
+                transition: cubic-bezier(0.785, 0.135, 0.15, 0.86) 0.3s all;
+                top: 8px;
+            }
+            &:after{
+                background: $burgerActiveColor;
+                transform: rotate(-45deg);
+                transition: cubic-bezier(0.785, 0.135, 0.15, 0.86) 0.3s all;
+                bottom: 10px;
+            }
+            & span {
+                transform: scale(0);
+            }
+
+        }
+        &:before,
+        &:after{
+            content: '';
+            position: absolute;
+            height: 2px;
+            width: 100%;
+            background-color: rgb(0, 0, 0);
+            transition: cubic-bezier(0.785, 0.135, 0.15, 0.86) 0.3s all; 
+        }
+        &:before {
+            top: 0;
+        }
+        &:after{
+            bottom: 0;
+        }
+        span{
+            position: absolute;
+            top: 9px;
+            right: 0;
+            width: 100%;
+            background-color: $burgerActiveColor;
+            height: 2px;
+            transform: scale(1);
+            transition: cubic-bezier(0.785, 0.135, 0.15, 0.86) 0.3s all; 
+        }
+    }
+    .menu__item{
+        margin-top: 15px;
+    }
+    .menu__item-link{
+        font-size: 50px;
+        line-height: 50px;
+    }
+	
+}
+
+//swiper =============================
+.swiper {
+    text-align: center;
+    justify-content: center;
+}
+.swiper-wrapper {
+}
+.swiper-slide {
+}
+.swiper-pagination {
+}
