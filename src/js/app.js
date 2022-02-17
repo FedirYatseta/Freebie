@@ -1,3 +1,4 @@
+
 import * as flsFunctions from "./modules/functions.js";
 import * as menu from "./navbar.js";
 
@@ -6,21 +7,19 @@ menu.burgerMenu();
 window.addEventListener('scroll', menu.fixedNav)
 
 
-import Swiper, { Navigation, Pagination } from 'swiper';
+import Swiper, { Pagination, Scrollbar, Navigation } from 'swiper';
 const swiper = new Swiper('.swiper', {
-    modules: [Navigation, Pagination],
+    modules: [Navigation, Pagination, Scrollbar],
     direction: 'horizontal',
     loop: true,
 
-    autoplay: {
-        delay: 5000,
-    },
     pagination: {
         el: '.swiper-pagination',
-        type: 'bullets'
+        type: 'bullets',
+        clickable: true,
+        renderBullet: function (index, className) {
+            return '<span class="' + className + '"> ' + '0' + (index + 1) + ' </span> '
+        }
     },
 
 });
-
-
-

@@ -6,8 +6,9 @@
 @import "ui";
 @import "footer";
 @import "hero";
-//@import "icons";
-
+@import "main-section";
+@import "swiper";
+@import "weare";
 
 //=================<MAIN BLOCK>==============================
 
@@ -18,8 +19,3 @@
 		padding: 30px 0px 0px 0px;
 	 }
 }
-
-.swiper {
-	width: 900px;
-	height: 300px;
-  }

@@ -1,9 +1,10 @@
-
+@use "sass:math";
 .header {
-    background: url("../img/Bitmap.svg") center no-repeat;
-    height: 100vh;
-    width: 100vw;
-    color: #fff;
+    position: absolute;
+	width: 100%;
+	left: 0;
+	top: 0;
+	z-index: 50;
     &__content {
         max-width: 1182px;
     }
@@ -16,29 +17,68 @@ nav {
     display: flex;
     width: 100%;
     justify-content: space-between;
-    padding-top: 15px;
-    padding-bottom: 15px;
+    padding: 75px 0px;
+}
+
+.logo a{
+        font-style: normal;
+        font-weight: bold;
+        font-size: 36px;
+
+        line-height: math.div(30,36)*100%;
+        /* identical to box height, or 83% */
+
+        display: flex;
+        align-items: center;
+        letter-spacing: 2.304px;
+
+        color: #FFFFFF;
 }
 .menu {
     display: flex;
 
     &__item {
-        margin: 10px;
+        margin: 10px 30px;
     }
 
     &__item-link {
-        color: rgb(250, 250, 250);
+        position: relative;
         font-style: normal;
-        font-weight: 500;
-        font-size: 20px;
-        line-height: 29px;
+        font-weight: normal;
+        font-size: 14px;
+        line-height: 21px;
+        line-height: math.div(21,14)*100%;
+        letter-spacing: 1.94px;
+
+        color: #FFFFFF;
+        //border-bottom: solid 1px  #4CAF50;
+        &:after {
+            content: "";
+            background: #4CAF50;
+            position: absolute;
+            bottom: 0;
+            right: 0;
+            width: 18px;
+            height: 1px;
+            transition: all 0.3s ease 0s;
+        }
         &._active{
-            color:#FF6464;
+            
+           
         }
     }
 
     &__item-link:hover {
         color:#FF6464;
+        &:after {
+            content: "";
+            background: #4CAF50;
+            position: absolute;
+            bottom: 0;
+            right: 0;
+            width: 100%;
+            height: 1px;
+        }
     }
 }
 .burger {
@@ -107,7 +147,7 @@ nav {
             position: absolute;
             height: 2px;
             width: 100%;
-            background-color: rgb(0, 0, 0);
+            background-color: rgb(255, 255, 255);
             transition: cubic-bezier(0.785, 0.135, 0.15, 0.86) 0.3s all; 
         }
         &:before {
@@ -135,16 +175,4 @@ nav {
         line-height: 50px;
     }
 	
-}
-
-//swiper =============================
-.swiper {
-    text-align: center;
-    justify-content: center;
-}
-.swiper-wrapper {
-}
-.swiper-slide {
-}
-.swiper-pagination {
 }

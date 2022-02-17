@@ -1,0 +1,48 @@
+@use 'sass:math';
+//line-height: math.div(107, 72)*100%;
+.page {
+  
+    &__we-are {
+    }
+}
+.we-are {
+    
+    &__container {
+    }
+
+    &__blocks {
+    }
+}
+.block-we {
+    
+    &__body {
+        width: 309px;
+        height: 418px;
+        left: 403px;
+        top: 62px;
+        
+        background: #4CAF50;
+        mix-blend-mode: normal;
+        opacity: 0.8;
+    }
+
+    &__decor {
+       
+    }
+
+    &__decor-1 {
+    
+    }
+
+    &__title {
+      //  display: inline-flex;
+    }
+
+    &__text {
+        //display: inline-flex;
+    }
+
+    &__decor-2 {
+      
+    }
+}
