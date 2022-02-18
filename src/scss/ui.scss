@@ -26,6 +26,7 @@
 
 
 .title {
+    font-family: 'Open Sans';
     font-style: normal;
     font-weight: bold;
     font-size: 36px;
@@ -47,7 +48,29 @@
     }
 }
 
+.title-art{
+        font-style: normal;
+        font-weight: bold;
+        font-size: 48px;
+        line-height: 71px;
+        line-height: math.div(71, 48)*100%;
+        letter-spacing: 3.072px;
+        position: relative;
+        color: #252525;
+        &:after {
+            content: "";
+            background: #353535;
+            position: absolute;
+            bottom: 0px;
+            left: 0px;
+            width: 45px;
+            height: 2px;
+        }
+}
+
+
 .text{
+    font-family: 'Open Sans';
     font-style: normal;
     font-weight: 300;
     font-size: 15px;
@@ -57,6 +80,39 @@
     color: #5B5858;
 }
 
+.name-photo{
+    font-style: normal;
+    font-weight: 300;
+    font-size: 48px;
+    line-height: math.div(71,48) * 100%;
+    letter-spacing: 3.072px;
+
+    color: #252525;
+}
+
+.title-works {
+    font-family: 'Open Sans';
+    font-style: normal;
+    font-weight: 300;
+    font-size: 18px;
+    line-height: math.div(25,18) * 100%;
+    /* identical to box height */
+    letter-spacing: 1.152px;
+    
+    color: #252525;
+}
+.readmore {
+    font-family: 'Open Sans';
+    font-style: normal;
+    font-weight: normal;
+    font-size: 13px;
+    line-height: math.div(18,13) * 100%;
+    /* identical to box height */
+    letter-spacing: 0.832px;
+
+    color: #252525;
+
+}
 
 ._ibg{
     position: relative;

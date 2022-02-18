@@ -1,48 +1,106 @@
 @use 'sass:math';
 //line-height: math.div(107, 72)*100%;
 .page {
-  
+
     &__we-are {
     }
 }
 .we-are {
-    
+
     &__container {
     }
 
-    &__blocks {
+    &__items {
+        display: flex;
+        max-width: 980px;
+        align-items: center;
+        justify-content: center;
+        margin: 150px auto;
+        gap: 72px;
+       
     }
-}
-.block-we {
+
+    &__column {
+        position: absolute;
+    }
+
+    &__column-1 {
+        position: relative;
+        width: 100%;
+        height: 100%;
+        max-height: 391px;
+        max-width: 301px;
+        top: -70px;
+        left: -20px;
+        z-index: 11;
+        object-fit: cover;
+        @media (max-width: 1250px){
+            width: 50%;
+            height: 50%;
+        }
+    }
     
-    &__body {
-        width: 309px;
-        height: 418px;
-        left: 403px;
-        top: 62px;
-        
+    &__column-2{
+        z-index: 10;
+    }
+    &__column-2 div {
+        content: ' ';
+        padding: 209px 154px;
+        width: 100%;
+        height: 100%;
         background: #4CAF50;
         mix-blend-mode: normal;
         opacity: 0.8;
     }
 
-    &__decor {
-       
-    }
-
-    &__decor-1 {
-    
+    &__column-3 {
+        position: relative;
+        width: 100%;
+        height: 100%;
+        max-height: 391px;
+        max-width: 301px;
+        top: 60px;
+        left: 20px;
+        z-index: 9;
     }
 
     &__title {
-      //  display: inline-flex;
+        position:absolute;
+        left: -190px;
+        top:50px;
     }
-
     &__text {
-        //display: inline-flex;
+        position:absolute;
+        max-width: 281px;
+        top:200px;
+        left:-150px;
+        &:after {
+            content: "";
+            background: #353535;
+            position: absolute;
+            top: 10px;
+            left: -30px;
+            width: 20px;
+            height: 2px;
+            transition: all 0.3s ease 0s;
+        }
     }
-
-    &__decor-2 {
-      
+    &__text3 {
+        position:absolute;
+        top: 250px;
+        left: 285px;
+        width: 311px;
+        &:after {
+            content: "";
+            background: #353535;
+            position: absolute;
+            top: 10px;
+            left: -30px;
+            width: 20px;
+            height: 2px;
+            transition: all 0.3s ease 0s;
+        }
     }
+}
+.container {
 }

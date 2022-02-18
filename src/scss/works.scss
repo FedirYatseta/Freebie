@@ -1,0 +1,82 @@
+@use "sass:math";
+
+.page {
+
+		&__latestworks {
+            margin: 165px 0px;
+		}
+}
+.latestworks {
+
+		&__blocks {
+		}
+}
+.block {
+
+		&__content {
+            display: flex;
+		}
+}
+.container {
+}
+.blocks-photo {
+        display: flex;
+        width: 50%;
+        flex-wrap: wrap;
+		&__item {
+            flex: 1 1 50%;
+		}
+		&__title {
+            display: inline-flex;
+		}
+
+		&__list {
+            display: inline-flex;
+            margin: 50px auto;
+		}
+
+        &__list li{
+            &:not(:last-child){
+                padding: 0px 40px 0 0;
+            }
+                a{
+                text-decoration: none;
+                font-family: 'Open Sans';
+                font-style: normal;
+                font-weight: normal;
+                font-size: 13px;
+                line-height: math.div(18,13) * 100%;
+                /* identical to box height */
+                letter-spacing: 0.832px;
+
+                color: #252525;
+                opacity: 0.3;
+            &:hover{
+                    font-weight: 600;
+                    font-size: 13px;
+                    line-height: math.div(18,13) * 100%;
+                    /* identical to box height */
+                    letter-spacing: 0.832px;
+                    color: #252525;
+                    opacity: 1;
+                    }
+                }
+            }
+        &__sub{
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+        }
+		&__image {
+         
+		}
+        &__name {
+		}
+
+		&__text {
+         
+		}
+
+		&__more {
+		}
+}
