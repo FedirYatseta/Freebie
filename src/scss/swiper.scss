@@ -1,7 +1,7 @@
 @use 'sass:math';
 //line-height: math.div(107, 72)*100%;
 .swiper {
-    min-height: 400px;
+    min-height: 50vh;
     margin: 400px 0px 0px 0px;
 }
 .swiper-wrapper {
@@ -36,6 +36,7 @@
 }
 
 .swiper .swiper-pagination {
+    
     justify-content: center;
     font-style: normal;
     font-weight: bold;
