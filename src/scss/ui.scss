@@ -88,6 +88,11 @@
     letter-spacing: 3.072px;
 
     color: #252525;
+    position: relative;
+    &:hover{
+        text-decoration: #70BF73 line-through;
+        
+    }
 }
 
 .title-works {
@@ -111,6 +116,10 @@
     letter-spacing: 0.832px;
 
     color: #252525;
+    &:hover{
+        text-decoration: #70BF73 line-through;
+        
+    }
 
 }
 

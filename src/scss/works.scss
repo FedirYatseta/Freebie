@@ -3,13 +3,13 @@
 .page {
 
 		&__latestworks {
-            margin: 165px 0px;
+            margin: 173px 0px;
 		}
 }
 .latestworks {
 
-		&__blocks {
-		}
+		&__blocks{}
+		
 }
 .block {
 
@@ -17,70 +17,98 @@
             display: flex;
 		}
 }
-.container {
-}
+
 .blocks-photo {
-        display: flex;
-        width: 50%;
-        flex-wrap: wrap;
+      display: flex;
+      flex-wrap: wrap;
+    
 		&__item {
-            flex: 1 1 50%;
-            position: relative;
-
-		}
-		&__title {
-            display: inline-flex;
-		}
-
-		&__list {
-            display: inline-flex;
-            margin: 50px auto;
-		}
-
-        &__list li{
-            &:not(:last-child){
-                padding: 0px 40px 0 0;
+                position: relative;
+                flex: 0 1 100%;
+        }
+            &__title {
+                display: inline-flex;
+                padding-top: 20px;
             }
-                a{
-                text-decoration: none;
-                font-family: 'Open Sans';
-                font-style: normal;
-                font-weight: normal;
-                font-size: 13px;
-                line-height: math.div(18,13) * 100%;
-                /* identical to box height */
-                letter-spacing: 0.832px;
 
-                color: #252525;
-                opacity: 0.3;
-            &:hover{
-                    font-weight: 600;
+            &__list {
+                display: flex;
+                margin: 0px auto;
+                padding: 50px 0;
+            }
+
+            &__list li{
+                display: inherit;
+                &:not(:last-child){
+                    padding: 0px 40px 0 0;
+                }
+                    a{
+                    text-decoration: none;
+                    font-family: 'Open Sans';
+                    font-style: normal;
+                    font-weight: normal;
                     font-size: 13px;
                     line-height: math.div(18,13) * 100%;
                     /* identical to box height */
                     letter-spacing: 0.832px;
+
                     color: #252525;
-                    opacity: 1;
+                    opacity: 0.3;
+                        &:hover{
+                                font-size: 13px;
+                                line-height: math.div(18,13) * 100%;
+                                /* identical to box height */
+                                letter-spacing: 0.832px;
+                                color: #252525;
+                                opacity: 1;
+                                }
                     }
                 }
+            &__sub{
+                display: flex;
+                flex-direction: column;
+                justify-content: center;
+                align-items: center;
             }
-        &__sub{
-            display: flex;
-            flex-direction: column;
-            justify-content: center;
-            align-items: center;
-        }
-		&__image {
-        
-		}
-        &__name {
-            position: absolute;
-		}
+            &__image {
+                display: flex;
+            }
+            &__image img {
+                
+            }
+            &__name {
+                position: absolute;
+                top:50%;
+                right: 0;
+                max-width: 402px;
+                
+            }
 
-		&__text {
-        
-		}
+            &__text {
+                padding-top: 20px;
+                max-width: 336px;
+                font-family: 'Open Sans';
+                font-style: normal;
+                font-weight: 300;
+                font-size: 13px;
+                line-height: math.div(23, 13)*100%;
+                /* or 177% */
 
-		&__more {
-		}
-}
+                display: flex;
+                align-items: center;
+                letter-spacing: 0.832px;
+
+                color: #C2C2C2;
+            }
+
+            &__more {
+                padding-top: 28px;
+            }
+    }
+
+   .item-1  .blocks-photo__image {
+       margin-top: 100px;
+   }
+   .item-3{
+       max-height: 500px;
+   }
