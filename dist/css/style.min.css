@@ -350,7 +350,6 @@ nav {
   font-style: normal;
   font-weight: bold;
   font-size: 48px;
-  line-height: 71px;
   line-height: 147.9166666667%;
   letter-spacing: 3.072px;
   position: relative;
@@ -701,6 +700,11 @@ nav {
   margin: 173px 0px;
 }
 
+.latestworks__blocks {
+  display: flex;
+  flex-wrap: wrap;
+}
+
 .block__content {
   display: flex;
 }
@@ -708,6 +712,7 @@ nav {
 .blocks-photo {
   display: flex;
   flex-wrap: wrap;
+  padding: 15px 0px;
 }
 .blocks-photo__item {
   position: relative;
@@ -753,29 +758,31 @@ nav {
   flex-direction: column;
   justify-content: center;
   align-items: center;
+  max-width: 455px;
 }
-.blocks-photo__image {
-  display: flex;
-}
-.blocks-photo__name {
-  position: absolute;
-  top: 50%;
-  right: 0;
-  max-width: 402px;
-}
-.blocks-photo__text {
+.blocks-photo__title {
   padding-top: 20px;
-  max-width: 336px;
+  max-width: 270px;
   font-family: "Open Sans";
   font-style: normal;
   font-weight: 300;
   font-size: 13px;
   line-height: 176.9230769231%;
   /* or 177% */
-  display: flex;
-  align-items: center;
   letter-spacing: 0.832px;
   color: #C2C2C2;
+}
+.blocks-photo__image {
+  display: flex;
+}
+.blocks-photo__name {
+  position: absolute;
+  top: 65%;
+  right: 0;
+  max-width: 402px;
+}
+.blocks-photo__art {
+  margin: 50px 0 0 0;
 }
 .blocks-photo__more {
   padding-top: 28px;
@@ -785,8 +792,77 @@ nav {
   margin-top: 100px;
 }
 
-.item-3 {
-  max-height: 500px;
+.item-2 .blocks-photo__image {
+  margin-top: 130px;
+}
+
+.item-3 .blocks-photo__image {
+  justify-content: flex-end;
+}
+.item-3 .blocks-photo__image h2 {
+  left: 0;
+}
+
+.item-4 .blocks-photo__image {
+  justify-content: flex-end;
+}
+
+.item-2 .blocks-photo__name {
+  top: 40%;
+}
+
+.item-3 .blocks-photo__name {
+  top: 40%;
+  left: 0;
+}
+
+.item-4 .blocks-photo__name {
+  top: 40%;
+  left: 0;
+  max-width: 410px;
+}
+
+.item-1 .blocks-photo__sub {
+  align-items: flex-end;
+}
+.item-1 .blocks-photo__sub div {
+  max-width: 366px;
+  text-align: right;
+}
+
+.item-2 .blocks-photo__sub {
+  align-items: flex-end;
+}
+.item-2 .blocks-photo__sub div {
+  max-width: 366px;
+  text-align: right;
+}
+
+.item-3 .blocks-photo__sub {
+  align-items: flex-end;
+}
+.item-3 .blocks-photo__sub div {
+  max-width: 366px;
+  text-align: right;
+}
+
+.item-4 .blocks-photo__sub {
+  align-items: flex-end;
+}
+.item-4 .blocks-photo__sub div {
+  max-width: 366px;
+  text-align: right;
+}
+
+.item-5 .blocks-photo__sub {
+  height: 100%;
+  justify-content: flex-end;
+  align-content: flex-end;
+  align-items: flex-end;
+}
+
+.page__team {
+  background: #FBFBFB;
 }
 
 .page {

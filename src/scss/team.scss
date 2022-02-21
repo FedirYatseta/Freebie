@@ -1,0 +1,49 @@
+@use "sass:math";
+//line-height: math.div(23, 13)*100%;
+                
+
+.page {
+
+    &__team {
+        background: #FBFBFB;
+    }
+}
+.team {
+
+    &__content {
+        
+    }
+
+    &__title {
+    }
+
+    &__items {
+    }
+
+    &__item {
+    }
+}
+.container {
+}
+.title {
+}
+.item-team {
+
+    &__img {
+ 
+    }
+
+    &__describe {
+        
+
+    }
+
+    &__name {
+    }
+
+    &__position {
+    }
+
+    &__text {
+    }
+}
