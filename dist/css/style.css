@@ -620,8 +620,6 @@ nav {
 .services__container {
   display: flex;
   flex-direction: column;
-  justify-content: start;
-  align-items: start;
   margin: 136px auto;
 }
 .services__title {
@@ -630,9 +628,15 @@ nav {
 .services__blocks {
   display: flex;
   justify-content: space-between;
+  flex-wrap: wrap;
+}
+@media (max-width: 1113px) {
+  .services__blocks {
+    justify-content: center;
+  }
 }
 .services__block {
-  margin: 15px;
+  margin: 5px;
   transition: all 0.3s ease 0s;
   position: relative;
 }
@@ -863,6 +867,246 @@ nav {
 
 .page__team {
   background: #FBFBFB;
+}
+
+.team__title {
+  padding: 135px 0 0 0;
+  margin-bottom: 71px;
+}
+.team__items {
+  padding-bottom: 167px;
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+}
+@media (max-width: 1113px) {
+  .team__items {
+    justify-content: center;
+  }
+}
+.team__item {
+  padding: 15px 0;
+  width: 100%;
+  max-width: 370px;
+}
+
+.item-team {
+  position: relative;
+  padding: 10px;
+}
+.item-team__img {
+  max-width: 370px;
+  margin: 0 auto;
+  height: 398px;
+  z-index: 5;
+}
+.item-team__describe {
+  position: absolute;
+  z-index: 10;
+  bottom: 0;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 100%;
+  height: 55px;
+  justify-content: center;
+  background: #FFFFFF;
+  opacity: 0.5;
+  transition: all 0.3s ease 0s;
+}
+.item-team__describe:hover {
+  height: 156px;
+  background: #FFFFFF;
+  opacity: 0.92;
+}
+.item-team__describe:hover .item-team__name:after {
+  content: "";
+  background: #252525;
+  position: absolute;
+  top: 63px;
+  width: 45px;
+  height: 2px;
+}
+.item-team__describe:hover .item-team__position {
+  margin: 5px auto;
+  display: block;
+}
+.item-team__describe:hover .item-team__text {
+  display: block;
+}
+.item-team__name {
+  display: flex;
+  width: 100%;
+  align-items: center;
+  justify-content: center;
+  font-style: normal;
+  font-weight: 300;
+  font-size: 18px;
+  line-height: 150%;
+  letter-spacing: 1.152px;
+  text-transform: uppercase;
+  color: #252525;
+}
+.item-team__position {
+  display: none;
+  font-style: normal;
+  font-weight: 300;
+  font-size: 18px;
+  line-height: 150%;
+  /* identical to box height */
+  letter-spacing: 1.152px;
+  color: #252525;
+}
+.item-team__text {
+  display: none;
+  font-family: "Open Sans";
+  font-style: normal;
+  font-weight: normal;
+  font-size: 12px;
+  line-height: 208.3333333333%;
+  /* identical to box height, or 208% */
+  letter-spacing: 1.008px;
+  color: #777777;
+}
+
+/*  
+ *  Pure CSS star rating that works without reversing order
+ *  of inputs
+ *  -------------------------------------------------------
+ *  NOTE: For the styling to work, there needs to be a radio
+ *        input selected by default. There also needs to be a
+ *        radio input before the first star, regardless of
+ *        whether you offer a 'no rating' or 0 stars option
+ *  
+ *  This codepen uses FontAwesome icons
+ */
+#full-stars-example-two {
+  /* use display:inline-flex to prevent whitespace issues. alternatively, you can put all the children of .rating-group on a single line */
+  /* make hover effect work properly in IE */
+  /* hide radio inputs */
+  /* hide 'none' input from screenreaders */
+  /* set icon padding and size */
+  /* set default star color */
+  /* if any input is checked, make its following siblings grey */
+  /* make all stars orange on rating group hover */
+  /* make hovered input's following siblings grey on hover */
+}
+#full-stars-example-two .rating-group {
+  display: inline-flex;
+}
+#full-stars-example-two .rating__icon {
+  pointer-events: none;
+}
+#full-stars-example-two .rating__input {
+  position: absolute !important;
+  left: -9999px !important;
+}
+#full-stars-example-two .rating__input--none {
+  display: none;
+}
+#full-stars-example-two .rating__label {
+  cursor: pointer;
+  padding: 0 0.1em;
+  font-size: 2rem;
+}
+#full-stars-example-two .rating__icon--star {
+  color: #8d4949;
+}
+#full-stars-example-two .rating__input:checked ~ .rating__label .rating__icon--star {
+  color: #f6f6f6;
+}
+#full-stars-example-two .rating-group:hover .rating__label .rating__icon--star {
+  color: gray;
+}
+#full-stars-example-two .rating__input:hover ~ .rating__label .rating__icon--star {
+  color: #ddd;
+}
+
+.review__content {
+  margin: 0 auto;
+  padding: 117px 0;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+.review__text {
+  max-width: 735px;
+  font-style: normal;
+  font-weight: 300;
+  font-size: 14px;
+  line-height: 31px;
+  /* or 221% */
+  letter-spacing: 0.896px;
+  color: #373737;
+}
+.review__symbol {
+  color: #B8B8B8;
+  padding: 30px 0;
+}
+.review__name {
+  font-style: normal;
+  font-weight: 300;
+  font-size: 14px;
+  line-height: 21px;
+  letter-spacing: 0.896px;
+  color: #B8B8B8;
+}
+.review__name span {
+  font-style: normal;
+  font-weight: normal;
+  font-size: 18px;
+  line-height: 27px;
+  /* identical to box height */
+  letter-spacing: 1.152px;
+  color: #373737;
+}
+.review__stars {
+  padding: 20px 0;
+}
+
+.page__contact {
+  background: linear-gradient(to right, #FBFBFB 50%, #70BD59 50%);
+}
+
+.contact__content {
+  display: flex;
+  justify-content: space-between;
+}
+.contact__block {
+  max-width: 280px;
+  padding: 50px 0 50px 0;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+}
+.contact__title {
+  margin-top: 20px;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 24px;
+  line-height: 36px;
+  /* identical to box height */
+  letter-spacing: 2.66667px;
+  color: #373737;
+}
+.contact__text {
+  margin-top: 22px;
+  font-family: "Open Sans";
+  font-style: normal;
+  font-weight: 300;
+  font-size: 14px;
+  line-height: 19px;
+  /* identical to box height */
+  letter-spacing: 1.55556px;
+  color: #373737;
+  mix-blend-mode: normal;
+  opacity: 0.8;
+}
+.contact__link a {
+  color: #373737;
 }
 
 .page {

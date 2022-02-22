@@ -14,8 +14,6 @@
     &__container {
         display: flex;
         flex-direction: column;
-        justify-content: start;
-        align-items: start;
         margin: 136px auto;
     }
    
@@ -27,10 +25,15 @@
     &__blocks {
         display: flex;
         justify-content: space-between;
+        flex-wrap: wrap;
+        @media (max-width: 1113px){
+            
+            justify-content: center;
+        }
     }
 
     &__block {
-        margin: 15px;
+        margin: 5px;
         transition: all 0.3s ease 0s;
         position: relative;
         &:hover{

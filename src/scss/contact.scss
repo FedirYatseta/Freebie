@@ -1,0 +1,61 @@
+
+.page {
+
+    &__contact {
+        background: linear-gradient(to right, #FBFBFB 50%, #70BD59 50%);
+    }
+}
+.contact {
+
+    &__content {
+        display: flex;
+        justify-content: space-between;
+    }
+
+    &__block {
+        max-width: 280px;
+        padding: 50px 0 50px 0;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        text-align: center;
+    }
+
+    &__image {
+    }
+
+    &__title {
+        margin-top: 20px;
+        font-style: normal;
+        font-weight: normal;
+        font-size: 24px;
+        line-height: 36px;
+        /* identical to box height */
+        letter-spacing: 2.66667px;
+
+        color: #373737;
+    }
+
+    &__text {
+        margin-top: 22px;
+        font-family: 'Open Sans';
+        font-style: normal;
+        font-weight: 300;
+        font-size: 14px;
+        line-height: 19px;
+        /* identical to box height */
+        letter-spacing: 1.55556px;
+
+        color: #373737;
+
+        mix-blend-mode: normal;
+        opacity: 0.8;
+    }
+
+    &__link a {
+        color: #373737;
+    }
+}
+.container {
+}

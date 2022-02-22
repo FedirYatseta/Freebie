@@ -15,35 +15,110 @@
     }
 
     &__title {
+        padding: 135px 0 0 0;
+        margin-bottom: 71px;
     }
 
     &__items {
+        padding-bottom: 167px;
+        display: flex;
+        justify-content: space-between;
+        flex-wrap: wrap;
+        @media (max-width: 1113px){
+            justify-content: center;
+        }
     }
 
     &__item {
+        padding: 15px 0;
+        width: 100%;
+        max-width: 370px;
     }
 }
-.container {
-}
-.title {
-}
-.item-team {
 
-    &__img {
- 
+.item-team {
+    position: relative;
+    
+    padding: 10px;
+        &__img {
+        max-width: 370px;
+        margin: 0 auto;
+        height: 398px;
+        z-index: 5;
     }
 
     &__describe {
-        
-
+        position: absolute;
+        z-index: 10;
+        bottom: 0;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        width: 100%;
+        height: 55px;
+        justify-content: center;
+        background: #FFFFFF;
+        opacity: 0.5;
+        transition: all 0.3s ease 0s;
+        &:hover{
+            height: 156px;
+            background: #FFFFFF;
+            opacity: 0.92;
+            .item-team__name:after{
+                content: "";
+                background: #252525;
+                position: absolute;
+                top: 63px;
+                width: 45px;
+                height: 2px;
+            }
+            .item-team__position{
+                margin: 5px auto;
+                display: block;
+            }
+            .item-team__text {
+                display: block;
+            
+                }
+        }
     }
 
     &__name {
+        display: flex;
+        width: 100%;
+        align-items: center;
+        justify-content: center;
+        font-style: normal;
+        font-weight: 300;
+        font-size: 18px;
+        line-height: math.div(27,18)*100%;
+        letter-spacing: 1.152px;
+        text-transform: uppercase;
+        color: #252525;
     }
 
     &__position {
+        display: none;
+        font-style: normal;
+        font-weight: 300;
+        font-size: 18px;
+        line-height: math.div(27,18)*100%;
+        /* identical to box height */
+        letter-spacing: 1.152px;
+
+        color: #252525;
     }
 
     &__text {
+        display: none;
+        font-family: 'Open Sans';
+        font-style: normal;
+        font-weight: normal;
+        font-size: 12px;
+        line-height: math.div(25,12)*100%;
+        /* identical to box height, or 208% */
+        letter-spacing: 1.008px;
+        
+        color: #777777;
     }
 }
