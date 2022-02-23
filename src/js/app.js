@@ -23,3 +23,20 @@ const swiper = new Swiper('.swiper', {
     },
 
 });
+
+
+
+////////////////////////////////
+const $icon = document.querySelector('.contact__link');
+const $arrow = document.querySelector('.contact__arrow');
+
+$icon.onclick = () => {
+    $arrow.animate([
+        { left: '0' },
+        { left: '10px' },
+        { left: '0' }
+    ], {
+        duration: 700,
+        iterations: Infinity
+    });
+}

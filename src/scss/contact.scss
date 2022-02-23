@@ -53,9 +53,49 @@
         opacity: 0.8;
     }
 
-    &__link a {
-        color: #373737;
+    &__link  {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        position: relative;
+        //right: 20%;
+        //transform: translate(-50%,-50%);
+        width: 80px;
+        height: 60px;
+        cursor: pointer;
+    
     }
+   
+    &__arrow{
+        position: absolute;
+        top: 35px;
+        width: 40%;
+        height: 2.5px;
+        background-color: rgb(126, 126, 126);
+        box-shadow: 0 3px 5px rgba(0, 0, 0, .2);
+        animation: arrow 700ms linear infinite;
+    }
+
+    
+    &__arrow::after, &__arrow::before {
+    content: '';
+    position: absolute;
+    width: 40%;
+    height: 2.5px;
+    right: -4px;
+    background-color: rgb(136, 136, 136);
+  }
+  
+  &__arrow::after {
+    top: -4px;
+    transform: rotate(45deg);
+  }
+  
+  &__arrow::before {
+    top: 4px;
+    box-shadow: 0 3px 5px rgba(0, 0, 0, .2);
+    transform: rotate(-45deg);
+  }
 }
 .container {
 }

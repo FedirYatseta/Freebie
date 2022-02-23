@@ -17,7 +17,11 @@ nav {
     display: flex;
     width: 100%;
     justify-content: space-between;
+    align-items: center;
     padding: 75px 0px;
+    @media (max-width: $md3){
+        padding: 35px 0px;
+    }
 }
 
 .logo a{
@@ -173,6 +177,7 @@ nav {
     .menu__item-link{
         font-size: 50px;
         line-height: 50px;
+        color: rgb(98, 98, 98);
     }
 	
 }

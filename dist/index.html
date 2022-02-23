@@ -9,7 +9,6 @@
 	<link rel="stylesheet" href="https://unpkg.com/swiper@8/swiper-bundle.min.css" />
 	<title>Main</title>
 </head>
-
 <body>
 	<div class="wrapper">
 		<header class="header">
@@ -67,7 +66,7 @@
     <div class="swiper-button-next"></div> -->
 
   <!-- If we need scrollbar -->
-  <div class="swiper-scrollbar"></div>
+  <!-- <div class="swiper-scrollbar"></div> -->
 </div>
 					</div>
 				</div>
@@ -146,7 +145,7 @@
 			<section class="page__latestworks latestworks">
 				<div class='block__content container'>
 					<div class="latestworks__blocks blocks-photo">
-						<div class="blocks-photo__item item-1">
+						<div class="blocks-photo__item">
 							<div class="blocks-photo__art title-art">Latest Works</div>
 							<ul class="blocks-photo__list">
 								<li><a href="http://"> ALL</a></li>
@@ -155,10 +154,15 @@
 								<li><a href="http://"> PHOTOGRAPHY</a></li>
 								<li><a href="http://"> ILLUSTRATION</a></li>
 							</ul>
-							<div class="blocks-photo__image">
-								<img src="./img/works/second.png" alt="" srcset="">
-							</div>
+						</div>
+						<div class="blocks-photo__item">
+							<div class="blocks-photo__block">
+								<div class="blocks-photo__image _ibg">
+									<img src="./img/works/second.png" alt="" srcset="">
+								</div>
 							<h2 class="blocks-photo__name name-photo">A KITTEN’S <br> LIFE</h2>
+							</div>
+								
 							<div class="blocks-photo__sub">
 								<h3 class="blocks-photo__title title-works">Photography</h3>
 								<div class="blocks-photo__text text">Lorem ipsum dolor sit amet, consectetur adipiscing
@@ -166,25 +170,32 @@
 								<a href="" class="blocks-photo__more readmore">READ MORE</a>
 							</div>
 						</div>
-						<div class="blocks-photo__item item-2">
-							<div class="blocks-photo__image">
-								<img src="./img/works/forth.png" alt="" srcset="">
+						<div class="blocks-photo__item">
+							<div class="blocks-photo__block">
+								<div class="blocks-photo__image _ibg">
+									<img src="./img/works/second.png" alt="" srcset="">
+								</div>
+							<h2 class="blocks-photo__name name-photo">A KITTEN’S <br> LIFE</h2>
 							</div>
-							<h2 class="blocks-photo__name name-photo">APPLE’s <br> LOST MAGIC</h2>
+								
 							<div class="blocks-photo__sub">
 								<h3 class="blocks-photo__title title-works">Photography</h3>
 								<div class="blocks-photo__text text">Lorem ipsum dolor sit amet, consectetur adipiscing
 									elit.</div>
 								<a href="" class="blocks-photo__more readmore">READ MORE</a>
-							</div>	
+							</div>
 						</div>
+						
 					</div>
 					<div class="latestworks__blocks blocks-photo">
-						<div class="blocks-photo__item item-3">
-							<div class="blocks-photo__image">
-								<img src="./img/works/Bitmap.png" alt="" srcset="">
+						<div class="blocks-photo__item">
+							<div class="blocks-photo__block">
+								<div class="blocks-photo__image _ibg">
+									<img src="./img/works/second.png" alt="" srcset="">
+								</div>
+							<h2 class="blocks-photo__name name-photo">A KITTEN’S <br> LIFE</h2>
 							</div>
-							<h2 class="blocks-photo__name name-photo">100 YEARS PHOTOGRAPHY</h2>
+								
 							<div class="blocks-photo__sub">
 								<h3 class="blocks-photo__title title-works">Photography</h3>
 								<div class="blocks-photo__text text">Lorem ipsum dolor sit amet, consectetur adipiscing
@@ -192,11 +203,14 @@
 								<a href="" class="blocks-photo__more readmore">READ MORE</a>
 							</div>
 						</div>
-						<div class="blocks-photo__item item-4">
-							<div class="blocks-photo__image">
-								<img src="./img/works/third.png" alt="" srcset="">
+						<div class="blocks-photo__item">
+							<div class="blocks-photo__block">
+								<div class="blocks-photo__image _ibg">
+									<img src="./img/works/second.png" alt="" srcset="">
+								</div>
+							<h2 class="blocks-photo__name name-photo">A KITTEN’S <br> LIFE</h2>
 							</div>
-							<h2 class="blocks-photo__name name-photo">GROOVEMADE <br>PRODUCTS FOR MAC</h2>
+								
 							<div class="blocks-photo__sub">
 								<h3 class="blocks-photo__title title-works">Photography</h3>
 								<div class="blocks-photo__text text">Lorem ipsum dolor sit amet, consectetur adipiscing
@@ -204,12 +218,8 @@
 								<a href="" class="blocks-photo__more readmore">READ MORE</a>
 							</div>
 						</div>
-						<div class="blocks-photo__item item-5">
-							<div class="blocks-photo__sub">
-								<a href="" class="blocks-photo__more readmore">view more</a>
-							</div>
-						</div>
-					</div> 
+						
+					</div>
 				</div>
 			</section>
 			<section class="page__team team">
@@ -326,7 +336,7 @@
 						<div class="contact__title">Want to work together?</div>
 						<div class="contact__text">Amazing. Tell us about your project!</div>
 						<div class="contact__link" >
-							<a href="#"><i class="fa-regular fa-right-long"></i></a>
+							<a class="contact__arrow" href="#"></a>
 						</div>
 					</div>
 					<div class="contact__block">
@@ -336,7 +346,7 @@
 						<div class="contact__title">Contact us</div>
 						<div class="contact__text">Get in touch</div>
 						<div class="contact__link" >
-							<a href="#"> <i class="fa-regular fa-right-long"></i></a>
+							<a class="contact__arrow" href="#"></a>
 						</div>
 					</div>
 					
@@ -344,8 +354,26 @@
 			</section>
 		</main>
 		<footer class="footer">
-    <div class="footer__content container">
-       
+    <div class="footer__content">
+       <div class="footer__contacts container">
+        <div class="footer__title">SQWD</div>   
+        <div class="footer__contact">
+            <div class="footer__address">3rd Floor, Santa Monica Beach, CA, San Francisco</div>
+            <div class="footer__number-mail">
+                <a href="tel:+3590123456789">(359) 0 123 456 789</a>
+                <span>-</span>
+                <a href="mailto:">info@yourmail.com</a>
+            </div>
+        </div>
+        <div class="footer__social">
+           <img src="../img/icons/facebook.svg" alt="" srcset="">
+           <img src="../img/icons/twitter.svg" alt="" srcset="">
+           <img src="../img/icons/pinterest.svg" alt="" srcset="">
+        </div>
+        </div>
+       </div>
+    <div class="footer__right ">
+       <div class="footer__copyright container">Copyright 2016 - All Rights Reserved - Designed by JD</div>
     </div>
 </footer>
 	</div>

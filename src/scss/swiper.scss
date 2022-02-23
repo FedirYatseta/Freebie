@@ -1,8 +1,7 @@
 @use 'sass:math';
 //line-height: math.div(107, 72)*100%;
 .swiper {
-    min-height: 50vh;
-    margin: 400px 0px 0px 0px;
+
 }
 .swiper-wrapper {
     position: relative;
@@ -10,8 +9,8 @@
 .swiper-slide {
     display: flex;
     flex-direction: column;
-    align-items: center;
     justify-content: center;
+    align-items: center;
     h1{
         font-style: normal;
         font-weight: 500;
@@ -21,6 +20,15 @@
         letter-spacing: 4.608px;
     
         color: #FFFFFF;
+        @media (max-width: $md2){
+            font-size: 4em;
+        }
+        @media (max-width: $md3){
+            font-size: 3em;
+        }
+        @media (max-width: $md4){
+            font-size: 2em;
+        }
     }
     span{
         font-style: normal;
@@ -31,12 +39,20 @@
         letter-spacing: 1.28px;
         color: #FFFFFF;
         opacity: 0.8;
+        @media (max-width: $md2){
+            font-size: 1.5em;
+        }
+        @media (max-width: $md3){
+            font-size: 1.2em;
+        }
+        @media (max-width: $md4){
+            font-size: 1em;
+        }
     }
     
 }
 
 .swiper .swiper-pagination {
-    
     justify-content: center;
     font-style: normal;
     font-weight: bold;
@@ -67,8 +83,6 @@
     }
 }
 
-.swiper-scrollbar {
-}
 .swiper  .swiper-pagination-bullet{
     width: 35px;
     height: 35px;

@@ -1,0 +1,94 @@
+
+
+.footer {
+
+    &__content {
+        background: #2E2E2E;
+        padding: 50px 0;
+    }
+
+    &__contacts {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+
+    &__title {
+        padding: 15px;
+        font-style: normal;
+        font-weight: bold;
+        font-size: 48px;
+        line-height: 30px;
+        /* identical to box height, or 62% */
+        letter-spacing: 3.072px;
+        color: #FFFFFF;
+    }
+
+    &__contact {
+    }
+
+    &__address {
+        padding-top: 15px;
+        font-style: normal;
+        font-weight: 300;
+        font-size: 13px;
+        line-height: 19px;
+        display: flex;
+        align-items: flex-end;
+        letter-spacing: 0.832px;
+
+        color: #FFFFFF;
+
+        mix-blend-mode: normal;
+        opacity: 0.5;
+    }
+
+    &__number-mail {
+        display: flex;
+        justify-content: center;
+        padding-top: 15px;
+        a{
+            font-style: normal;
+            font-weight: 300;
+            font-size: 13px;
+            line-height: 19px;
+            letter-spacing: 0.832px;
+            
+            color: #FFFFFF;
+            
+            mix-blend-mode: normal;
+            opacity: 0.5; 
+        }
+    }
+
+    &__social {
+        padding-top: 15px;
+        img{
+            width: 32px;
+            height: 32px;
+            color: #FFFFFF;
+        }
+    }
+
+    &__right {
+        background: #252525;
+    }
+
+    &__copyright {
+        display: flex;
+        justify-content: center;
+        padding: 20px 0;
+        font-style: normal;
+        font-weight: 300;
+        font-size: 13px;
+        line-height: 19px;
+        letter-spacing: 0.832px;
+
+        color: #FFFFFF;
+
+        mix-blend-mode: normal;
+        opacity: 0.5;
+    }
+}
+
