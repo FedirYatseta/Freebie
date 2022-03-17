@@ -1,4 +1,5 @@
-
+@use 'sass:math';
+//line-height: math.div(107, 72)*100%;
 .page {
 
     &__contact {
@@ -16,41 +17,53 @@
         max-width: 280px;
         padding: 50px 0 50px 0;
         display: flex;
+        flex: 0 1 100%;
         flex-direction: column;
         align-items: center;
         justify-content: center;
         text-align: center;
+        height: 100%;
     }
 
     &__image {
     }
 
     &__title {
-        margin-top: 20px;
+        display: flex;
         font-style: normal;
         font-weight: normal;
         font-size: 24px;
-        line-height: 36px;
+        line-height: math.div(36, 24)*100%;
         /* identical to box height */
         letter-spacing: 2.66667px;
-
+        min-height: 60px;
+        align-items: center;
         color: #373737;
+        @media (max-width: $md2){
+            margin-top: 10px;
+            font-size: 18px;
+        }
     }
 
     &__text {
         margin-top: 22px;
         font-family: 'Open Sans';
+        
         font-style: normal;
         font-weight: 300;
         font-size: 14px;
-        line-height: 19px;
+        line-height: math.div(19, 14)*100%;
         /* identical to box height */
         letter-spacing: 1.55556px;
-
+        min-height: 25px;
         color: #373737;
 
         mix-blend-mode: normal;
         opacity: 0.8;
+        @media (max-width: $md2){
+            margin-top: 8px;
+            font-size: 8px;
+        }
     }
 
     &__link  {

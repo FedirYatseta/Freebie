@@ -27,6 +27,9 @@
         @media (max-width: 1113px){
             justify-content: center;
         }
+        @media (max-width: $md3){
+            padding-bottom: 50px; 
+        }
     }
 
     &__item {

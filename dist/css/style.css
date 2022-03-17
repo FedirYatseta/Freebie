@@ -321,17 +321,24 @@ nav {
   font-style: normal;
   font-weight: bold;
   font-size: 48px;
+  line-height: 62.5%;
   line-height: 30px;
   /* identical to box height, or 62% */
   letter-spacing: 3.072px;
   color: #FFFFFF;
+}
+@media (max-width: 767.98px) {
+  .footer__title {
+    padding: 5px;
+    font-size: 36px;
+  }
 }
 .footer__address {
   padding-top: 15px;
   font-style: normal;
   font-weight: 300;
   font-size: 13px;
-  line-height: 19px;
+  line-height: 146.1538461538%;
   display: flex;
   align-items: flex-end;
   letter-spacing: 0.832px;
@@ -348,7 +355,7 @@ nav {
   font-style: normal;
   font-weight: 300;
   font-size: 13px;
-  line-height: 19px;
+  line-height: 146.1538461538%;
   letter-spacing: 0.832px;
   color: #FFFFFF;
   mix-blend-mode: normal;
@@ -372,7 +379,7 @@ nav {
   font-style: normal;
   font-weight: 300;
   font-size: 13px;
-  line-height: 19px;
+  line-height: 146.1538461538%;
   letter-spacing: 0.832px;
   color: #FFFFFF;
   mix-blend-mode: normal;
@@ -444,6 +451,11 @@ nav {
   left: 0px;
   width: 45px;
   height: 2px;
+}
+@media (max-width: 767.98px) {
+  .title-art {
+    font-size: 36px;
+  }
 }
 
 .text {
@@ -864,7 +876,7 @@ nav {
 
 @media (min-width: 991.98px) {
   .page__latestworks {
-    margin: 173px 0px;
+    margin: 10px 0px 10px 0px;
   }
 }
 
@@ -890,7 +902,8 @@ nav {
 .blocks-photo {
   padding: 15px 0px;
   justify-content: center;
-  align-items: center;
+  align-items: flex-start;
+  align-content: flex-start;
 }
 @media (min-width: 767.98px) {
   .blocks-photo {
@@ -917,22 +930,23 @@ nav {
   position: relative;
 }
 .blocks-photo__list {
-  display: flex;
-  flex-wrap: wrap;
-  align-items: center;
-  padding: 10px 0;
+  margin: 0 auto;
+  margin-bottom: 15px;
 }
-@media (min-width: 991.98px) {
+@media (min-width: 767.98px) {
   .blocks-photo__list {
     display: flex;
-    margin: 0px auto;
-    padding: 50px 0;
+    flex-wrap: nowrap;
+    margin: 40px 0px 160px 0px;
   }
 }
 .blocks-photo__list li {
   display: inherit;
   flex: 0 1 50%;
-  justify-content: center;
+  justify-content: flex-start;
+  align-items: center;
+  margin: 10px 0px 0px 0px;
+  white-space: nowrap;
 }
 .blocks-photo__list li:not(:last-child) {
   padding: 0px 10px 0 0;
@@ -953,6 +967,14 @@ nav {
   letter-spacing: 0.832px;
   color: #252525;
   opacity: 0.3;
+}
+@media (max-width: 767.98px) {
+  .blocks-photo__list li a {
+    display: flex;
+    text-align: center;
+    justify-content: center;
+    align-items: center;
+  }
 }
 .blocks-photo__list li a:hover {
   font-size: 13px;
@@ -1011,6 +1033,11 @@ nav {
 @media (max-width: 1113px) {
   .team__items {
     justify-content: center;
+  }
+}
+@media (max-width: 767.98px) {
+  .team__items {
+    padding-bottom: 50px;
   }
 }
 .team__item {
@@ -1152,21 +1179,21 @@ nav {
 }
 
 .review__content {
-  margin: 0 auto;
-  padding: 117px 0;
   display: flex;
   flex-direction: column;
   align-items: center;
   justify-content: center;
 }
 .review__text {
+  font-family: "Open Sans";
   max-width: 735px;
   font-style: normal;
   font-weight: 300;
   font-size: 14px;
-  line-height: 31px;
+  line-height: 221.4285714286%;
   /* or 221% */
   letter-spacing: 0.896px;
+  text-align: center;
   color: #373737;
 }
 .review__symbol {
@@ -1206,20 +1233,30 @@ nav {
   max-width: 280px;
   padding: 50px 0 50px 0;
   display: flex;
+  flex: 0 1 100%;
   flex-direction: column;
   align-items: center;
   justify-content: center;
   text-align: center;
+  height: 100%;
 }
 .contact__title {
-  margin-top: 20px;
+  display: flex;
   font-style: normal;
   font-weight: normal;
   font-size: 24px;
-  line-height: 36px;
+  line-height: 150%;
   /* identical to box height */
   letter-spacing: 2.66667px;
+  min-height: 60px;
+  align-items: center;
   color: #373737;
+}
+@media (max-width: 991.98px) {
+  .contact__title {
+    margin-top: 10px;
+    font-size: 18px;
+  }
 }
 .contact__text {
   margin-top: 22px;
@@ -1227,12 +1264,19 @@ nav {
   font-style: normal;
   font-weight: 300;
   font-size: 14px;
-  line-height: 19px;
+  line-height: 135.7142857143%;
   /* identical to box height */
   letter-spacing: 1.55556px;
+  min-height: 25px;
   color: #373737;
   mix-blend-mode: normal;
   opacity: 0.8;
+}
+@media (max-width: 991.98px) {
+  .contact__text {
+    margin-top: 8px;
+    font-size: 8px;
+  }
 }
 .contact__link {
   display: flex;

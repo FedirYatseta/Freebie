@@ -1,4 +1,5 @@
-
+@use 'sass:math';
+//line-height: math.div(107, 72)*100%;
 
 .footer {
 
@@ -19,10 +20,15 @@
         font-style: normal;
         font-weight: bold;
         font-size: 48px;
+        line-height: math.div(30, 48)*100%;
         line-height: 30px;
         /* identical to box height, or 62% */
         letter-spacing: 3.072px;
         color: #FFFFFF;
+        @media (max-width: $md3){
+            padding: 5px;
+            font-size: 36px;
+        }
     }
 
     &__contact {
@@ -33,7 +39,7 @@
         font-style: normal;
         font-weight: 300;
         font-size: 13px;
-        line-height: 19px;
+        line-height: math.div(19, 13)*100%;
         display: flex;
         align-items: flex-end;
         letter-spacing: 0.832px;
@@ -52,7 +58,7 @@
             font-style: normal;
             font-weight: 300;
             font-size: 13px;
-            line-height: 19px;
+            line-height: math.div(19, 13)*100%;
             letter-spacing: 0.832px;
             
             color: #FFFFFF;
@@ -82,7 +88,7 @@
         font-style: normal;
         font-weight: 300;
         font-size: 13px;
-        line-height: 19px;
+        line-height: math.div(19, 13)*100%;
         letter-spacing: 0.832px;
 
         color: #FFFFFF;

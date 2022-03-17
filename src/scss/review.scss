@@ -1,5 +1,5 @@
 @use "sass:math";
-
+//line-height: math.div(107, 72)*100%;
 
 
 .page {
@@ -10,8 +10,6 @@
 .review {
 
     &__content {
-        margin: 0 auto;
-        padding: 117px 0;
         display: flex;
         flex-direction: column;
         align-items: center;
@@ -19,15 +17,20 @@
     }
 
     &__text {
+        
+        font-family: 'Open Sans';
         max-width: 735px;
         font-style: normal;
         font-weight: 300;
         font-size: 14px;
-        line-height: 31px;
+        line-height: math.div(31, 14)*100%;
         /* or 221% */
         letter-spacing: 0.896px;
-
+        text-align: center;
         color: #373737;
+
+
+        
     }
 
     &__symbol {

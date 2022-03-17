@@ -65,6 +65,9 @@
             width: 45px;
             height: 2px;
         }
+        @media (max-width: $md3){
+            font-size: 36px;      
+        }
 }
 
 
